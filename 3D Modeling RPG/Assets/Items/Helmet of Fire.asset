@@ -9,9 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 714f60aafe1e94cd397f5046038cbb48, type: 3}
-  m_Name: Test Item
+  m_Script: {fileID: 11500000, guid: 4a0d25889e0db4418b05955e8a0b3c21, type: 3}
+  m_Name: Helmet of Fire
   m_EditorClassIdentifier: 
-  name: Helmet of Protection
-  icon: {fileID: 0}
+  name: Helmet of Fire
+  icon: {fileID: 21300000, guid: ce2375f5d37f54b09a991b90fdc937ec, type: 3}
   isDefaultItem: 0
+  equipSlot: 0
+  armorModifier: 3
+  damageModifier: 0
