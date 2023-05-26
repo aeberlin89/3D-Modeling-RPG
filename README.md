@@ -7,10 +7,10 @@ Initial scene items (environment, trees, campfire, lampposts, etc) are part of t
 
 
 
-# Update 5.26.1 - Pickup Items Mesh Added
+# Video Update 5/26 - Pickup Items Mesh Added
 
 https://github.com/aeberlin89/3D-Modeling-RPG/assets/30939127/109b7869-fb37-43b8-b56c-58e81e8e6cf3
 
 5/26/23
 
-Update format -> MM.DD.updateNumberForThatDay
+
