@@ -16,7 +16,7 @@ public class CharacterAnimator : MonoBehaviour
     protected Animator animator;
     protected CharacterCombat combat;
 
-    protected AnimatorOverrideController overrideController;
+    public AnimatorOverrideController overrideController;
 
 
 
@@ -29,7 +29,11 @@ public class CharacterAnimator : MonoBehaviour
         //reference combat component so we can see if character is in combat
         combat = GetComponent<CharacterCombat>();
 
-        overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+        if(overrideController == null)
+        {
+            overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+        }
+        
         animator.runtimeAnimatorController = overrideController;
 
         currentAttackAnimSet = defaultAttackAnimSet;
