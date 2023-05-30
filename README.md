@@ -5,6 +5,13 @@ Starting with the player model, then moving to armor, weapons, environment, enem
 
 Initial scene items (environment, trees, campfire, lampposts, etc) are part of the RPG tutorial package from devassets.com by Brackeys and Sebastian Lague
 
+# Video Update 5/30.3 - Skeleton Enemy Model + Animations
+
+https://github.com/aeberlin89/3D-Modeling-RPG/assets/30939127/05af4105-dab0-41fb-bffb-6c3701071c77
+
+5/30/23
+
+
 # Video Update 5/30.2 - Attack Animations + Health Bar UI
 
 https://github.com/aeberlin89/3D-Modeling-RPG/assets/30939127/a32a67bb-f04e-4d09-be1d-1d69ed214f89
