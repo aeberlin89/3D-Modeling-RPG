@@ -8,7 +8,7 @@ Initial scene items (environment, trees, campfire, lampposts, etc) are part of t
 
 # Video Update 5/30 - Sword and Shield Integration
 
-https://github.com/aeberlin89/3D-Modeling-RPG/assets/30939127/1de74f10-8e4e-48b4-856c-69b181820622
+https://github.com/aeberlin89/3D-Modeling-RPG/assets/30939127/f25740d5-db24-48ce-ad75-d027c7b8f5b1
 
 5/30/23
 
