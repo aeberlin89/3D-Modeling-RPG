@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class EquipmentManager : MonoBehaviour
 {
@@ -146,7 +147,8 @@ public class EquipmentManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.U))
+        if(Keyboard.current.uKey.wasPressedThisFrame)
+        //if (Input.GetKeyDown(KeyCode.U))
         {
             UnequipAll();
         }

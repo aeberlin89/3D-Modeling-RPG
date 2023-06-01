@@ -21,6 +21,7 @@ public class CharacterCombat : MonoBehaviour
     public event System.Action OnAttack;
     
     CharacterStats myStats;
+    CharacterStats opponentStats;
 
     private void Start()
     {
@@ -53,7 +54,8 @@ public class CharacterCombat : MonoBehaviour
         {
             //call take damage on the target's stats and pass in the damage value
             //from this character. The modifiers are dealt with inside takeDamage.
-            StartCoroutine(DoDamage(targetStats, attackDelay));
+
+            opponentStats = targetStats;
 
             OnAttack?.Invoke();
 
@@ -64,15 +66,14 @@ public class CharacterCombat : MonoBehaviour
 
     }
 
-    IEnumerator DoDamage(CharacterStats stats, float delay)
-    {
-        yield return new WaitForSeconds(delay);
+    
 
-        stats.TakeDamage(myStats.damage.GetValue());
-        if(stats.currentHealth <= 0)
+    public void AttackHit_AnimationEvent()
+    {
+        opponentStats.TakeDamage(myStats.damage.GetValue());
+        if (opponentStats.currentHealth <= 0)
         {
             InCombat = false;
         }
-
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
 {
@@ -21,10 +22,23 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        currentZoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
+        currentZoom -= (float)Mouse.current.scroll.ReadValue().y * zoomSpeed;
+        //currentZoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
         currentZoom = Mathf.Clamp(currentZoom, minZoom, maxZoom);
 
-        currentYaw -= Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime;
+        float yawValue = 0;
+        if (Keyboard.current.aKey.wasPressedThisFrame)
+        {
+            yawValue = -1f;
+        }
+        if (Keyboard.current.dKey.wasPressedThisFrame)
+        {
+            yawValue = 1f;
+        }
+
+        //currentYaw -= Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime;
+        currentYaw -= yawValue * yawSpeed * Time.deltaTime;
+
     }
 
     void LateUpdate()

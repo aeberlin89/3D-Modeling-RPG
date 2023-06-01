@@ -1,0 +1,54 @@
+{
+    "name": "Input_One",
+    "maps": [
+        {
+            "name": "Player_Land",
+            "id": "8ece6565-468d-458c-8da7-bdd786dddf6b",
+            "actions": [
+                {
+                    "name": "MovePlayer",
+                    "type": "Button",
+                    "id": "f61f5a4e-7735-40b1-836e-fb7f3ec76d0b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "68c5acf8-0e3c-45ca-b7ef-ea149a718124",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d06dce3c-3723-4d78-b941-86396bb15cd5",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovePlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4495e8fa-a3bb-4426-9e11-4bba4e37acea",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

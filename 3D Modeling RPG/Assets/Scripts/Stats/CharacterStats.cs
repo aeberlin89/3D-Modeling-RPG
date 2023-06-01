@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CharacterStats : MonoBehaviour
 {
@@ -19,7 +20,8 @@ public class CharacterStats : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if(Keyboard.current.tKey.wasPressedThisFrame)
+        //if (Input.GetKeyDown(KeyCode.T))
         {
             TakeDamage(10);
         }
